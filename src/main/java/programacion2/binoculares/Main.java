@@ -3,29 +3,23 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+
 public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    // System.out.print("\033[H\033[2J------------------------\n");
-    // printString(
-    // "¡Hola! Bienvenido al simulador para observar la naturaleza.\n\nEstás en los
-    // cerros tucumanos, más específicamente en San Javier. La Sierra San Javier se
-    // ubica al oeste de la ciudad de San Miguel de Tucumán, entre los 26°38' y los
-    // 26°5' de latitud sur, y los 65°06' y 65°20' de longitud oeste.\n\n¡Esperamos
-    // que lo disfrutes!\n\nPara proceder, por favor ingresa el modelo de los
-    // binoculares que quieras utilizar: ");
-    // String modelo = scanner.nextLine();
+    System.out.print("\033[H\033[2J------------------------\n");
+    printString("¡Hola! Bienvenido al simulador para observar la naturaleza.\n\nEstás en los cerros tucumanos, más específicamente en San Javier. La Sierra San Javier se ubica al oeste de la ciudad de San Miguel de Tucumán, entre los 26°38' y los 26°5' de latitud sur, y los 65°06' y 65°20' de longitud oeste.\n\n¡Esperamos que lo disfrutes!\n\nPara proceder, por favor ingresa el modelo de los binoculares que quieras utilizar: ");
+    String modelo = scanner.nextLine();
 
-    // printString("\n¡Excelente elección! Ahora por favor ingresa la distancia
-    // focal de tus binoculares: ");
-    // double distancia = scanner.nextDouble();
+    printString("\n¡Excelente elección! Ahora por favor ingresa la distancia focal de tus binoculares: ");
+    double distancia = scanner.nextDouble();
 
-    // printString("\nPor último, por favor ingresa la apertura de tus binoculares:
-    // ");
-    // double apertura = scanner.nextDouble();
+    printString("\nPor último, por favor ingresa la apertura de tus binoculares:");
+    double apertura = scanner.nextDouble();
 
-    // Binocular binocular = new Binocular(modelo, distancia, apertura);
-    Binocular binocular = new Binocular("modelo", 1, 1);
+     Binocular binocular = new Binocular(modelo, distancia, apertura);
+//    Binocular binocular = new Binocular("modelo", 1, 1);
     Simulador simulador = new Simulador(binocular);
 
     // printList(String.format(
