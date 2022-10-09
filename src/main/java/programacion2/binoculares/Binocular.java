@@ -8,6 +8,11 @@ public class Binocular {
     this.distanciaFocal = p_distanciaFocal;
     this.apertura = p_apertura;
   }
+  public Binocular(){
+    this.modelo = "";
+    this.distanciaFocal = 1;
+    this.apertura = 1;
+  }
 
   public String getModelo() {
     return this.modelo;

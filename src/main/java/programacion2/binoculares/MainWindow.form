@@ -47,63 +47,54 @@
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
-                                  <Component id="titulo" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="dialog" min="-2" pref="530" max="-2" attributes="0"/>
-                                      <Component id="CuadroDialogo" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="modeloLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="modeloInput" min="-2" pref="167" max="-2" attributes="0"/>
-                                      <Component id="distanciaFocalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="distanciaFocalInput" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
-                                      <Component id="aperturaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="aperturaInput" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                          <Component id="configurarBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                                          <Component id="controles" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="abajo" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="arriba" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                                  <Component id="izquierda" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Component id="derecha" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="47" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
+                          <Component id="titulo" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="observacionesScrollPane" alignment="0" min="-2" pref="530" max="-2" attributes="0"/>
-                              <Component id="observacionesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="dialog" min="-2" pref="530" max="-2" attributes="0"/>
+                              <Component id="CuadroDialogo" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="modeloLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="modeloInput" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="distanciaFocalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="distanciaFocalInput" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="aperturaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="aperturaInput" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="configurarBtn" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                                  <Component id="controles" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="abajo" min="-2" max="-2" attributes="0"/>
+                                              <Component id="arriba" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="izquierda" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="derecha" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
+                      <Component id="observacionesScrollPane" alignment="0" min="-2" pref="530" max="-2" attributes="0"/>
+                      <Component id="observacionesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -165,9 +156,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="sansserif" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Simulador de uso de BINOCULARES"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -207,9 +195,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="dialog">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa1;Hola! Bienvenido al simulador para observar la naturaleza.&lt;br/&gt;Est&#xe1;s en los cerros tucumanos, m&#xe1;s espec&#xed;ficamente en San Javier. La Sierra San Javier se ubica al oeste de la ciudad de San Miguel de Tucum&#xe1;n, entre los 26&#xb0;38&apos; y los 26&#xb0;5&apos; de latitud sur, y los 65&#xb0;06&apos; y 65&#xb0;20&apos; de longitud oeste &#xa1;Esperamos que lo disfrutes!&lt;br/&gt;Para proceder, por favor ingresa el modelo de los binoculares que quieras utilizar."/>
             <Property name="verticalAlignment" type="int" value="1"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -227,7 +212,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JList" name="jList1">
+            <Component class="javax.swing.JList" name="diarioList">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="5">
@@ -247,9 +232,6 @@
         </Container>
         <Component class="javax.swing.JLabel" name="observacionesLabel">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Diario de observaciones"/>
           </Properties>
         </Component>
@@ -257,17 +239,11 @@
         </Component>
         <Component class="javax.swing.JLabel" name="modeloLabel">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Modelo de Binocular"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="distanciaFocalLabel">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Distancia focal"/>
           </Properties>
         </Component>
@@ -275,9 +251,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="aperturaLabel">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Apertura"/>
           </Properties>
         </Component>
@@ -296,17 +269,11 @@
         </Component>
         <Component class="javax.swing.JLabel" name="controles">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Controles"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="CuadroDialogo">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Cuadro de dialogo"/>
           </Properties>
         </Component>

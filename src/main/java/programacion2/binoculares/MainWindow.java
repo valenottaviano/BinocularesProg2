@@ -1,4 +1,11 @@
 package programacion2.binoculares;
+
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+import javax.swing.ListModel;
+
+
 public class MainWindow extends javax.swing.JFrame {
     
     public MainWindow() {
@@ -17,7 +24,7 @@ public class MainWindow extends javax.swing.JFrame {
         izquierda = new javax.swing.JButton();
         dialog = new javax.swing.JLabel();
         observacionesScrollPane = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        diarioList = new javax.swing.JList<>();
         observacionesLabel = new javax.swing.JLabel();
         modeloInput = new javax.swing.JTextField();
         modeloLabel = new javax.swing.JLabel();
@@ -35,7 +42,6 @@ public class MainWindow extends javax.swing.JFrame {
 
         titulo.setBackground(new java.awt.Color(0, 0, 0));
         titulo.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        titulo.setForeground(new java.awt.Color(0, 0, 0));
         titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titulo.setText("Simulador de uso de BINOCULARES");
         titulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -68,29 +74,24 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        dialog.setForeground(new java.awt.Color(0, 0, 0));
         dialog.setText("<html>¡Hola! Bienvenido al simulador para observar la naturaleza.<br/>Estás en los cerros tucumanos, más específicamente en San Javier. La Sierra San Javier se ubica al oeste de la ciudad de San Miguel de Tucumán, entre los 26°38' y los 26°5' de latitud sur, y los 65°06' y 65°20' de longitud oeste ¡Esperamos que lo disfrutes!<br/>Para proceder, por favor ingresa el modelo de los binoculares que quieras utilizar.");
         dialog.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         dialog.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         dialog.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        diarioList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        observacionesScrollPane.setViewportView(jList1);
+        observacionesScrollPane.setViewportView(diarioList);
 
-        observacionesLabel.setForeground(new java.awt.Color(0, 0, 0));
         observacionesLabel.setText("Diario de observaciones");
 
-        modeloLabel.setForeground(new java.awt.Color(0, 0, 0));
         modeloLabel.setText("Modelo de Binocular");
 
-        distanciaFocalLabel.setForeground(new java.awt.Color(0, 0, 0));
         distanciaFocalLabel.setText("Distancia focal");
 
-        aperturaLabel.setForeground(new java.awt.Color(0, 0, 0));
         aperturaLabel.setText("Apertura");
 
         aperturaInput.addActionListener(new java.awt.event.ActionListener() {
@@ -106,10 +107,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        controles.setForeground(new java.awt.Color(0, 0, 0));
         controles.setText("Controles");
 
-        CuadroDialogo.setForeground(new java.awt.Color(0, 0, 0));
         CuadroDialogo.setText("Cuadro de dialogo");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -120,47 +119,42 @@ public class MainWindow extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(259, 259, 259)
-                                .addComponent(titulo))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(dialog, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CuadroDialogo))
-                                .addGap(52, 52, 52)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(modeloLabel)
-                                    .addComponent(modeloInput, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(distanciaFocalLabel)
-                                    .addComponent(distanciaFocalInput, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(aperturaLabel)
-                                    .addComponent(aperturaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(42, 42, 42)
-                                        .addComponent(configurarBtn))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(107, 107, 107)
-                                        .addComponent(controles))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(121, 121, 121)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(abajo)
-                                                    .addComponent(arriba))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(izquierda)
-                                                .addGap(33, 33, 33)))
-                                        .addComponent(derecha)))))
-                        .addContainerGap(47, Short.MAX_VALUE))
+                        .addGap(259, 259, 259)
+                        .addComponent(titulo))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(observacionesScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(observacionesLabel))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(dialog, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CuadroDialogo))
+                        .addGap(52, 52, 52)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(modeloLabel)
+                            .addComponent(modeloInput, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(distanciaFocalLabel)
+                            .addComponent(distanciaFocalInput, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(aperturaLabel)
+                            .addComponent(aperturaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(42, 42, 42)
+                                .addComponent(configurarBtn))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(107, 107, 107)
+                                .addComponent(controles))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(121, 121, 121)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(abajo)
+                                            .addComponent(arriba))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(izquierda)
+                                        .addGap(33, 33, 33)))
+                                .addComponent(derecha))))
+                    .addComponent(observacionesScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(observacionesLabel))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -220,26 +214,32 @@ public class MainWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void arribaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arribaActionPerformed
+        if(isConfigured == true){
         setDireccion("arriba");
         dialog.setText("La dirección actual es: Arriba\n");
-        
+        }
     }//GEN-LAST:event_arribaActionPerformed
 
     private void abajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abajoActionPerformed
-        setDireccion("abajo");
-        dialog.setText("La dirección actual es: Abajo");
+        if(isConfigured == true){
+            setDireccion("abajo");
+            dialog.setText("La dirección actual es: Abajo");
+        }
     }//GEN-LAST:event_abajoActionPerformed
 
     private void derechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_derechaActionPerformed
-        setDireccion("derecha");
-        dialog.setText("La dirección actual es: Derecha");
+        if(isConfigured == true){
+            setDireccion("derecha");
+            dialog.setText("La dirección actual es: Derecha");
+        }
     }//GEN-LAST:event_derechaActionPerformed
 
     private void configurarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_configurarBtnActionPerformed
         setModelo(modeloInput.getText());
         setDistancia(Double.parseDouble(distanciaFocalInput.getText()));
         setApertura(Double.parseDouble(aperturaInput.getText()));
-        dialog.setText(convertToMultiline("¡Excelente elección! Binoculares configurados correctamente. \n Listos para comenzar la aventura."));
+        dialog.setText(convertToMultiline("¡Excelente elección! Binoculares configurados correctamente. \n Listos para comenzar la aventura. \n Por favor, elige una dirección para observar."));
+        setIsConfigured(true);
     }//GEN-LAST:event_configurarBtnActionPerformed
 
     private void aperturaInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aperturaInputActionPerformed
@@ -247,17 +247,19 @@ public class MainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_aperturaInputActionPerformed
 
     private void izquierdaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_izquierdaActionPerformed
-        setDireccion("izquierda");
-        dialog.setText("La dirección actual es: Izquierda");
+        if(isConfigured == true){
+            setDireccion("izquierda");
+            dialog.setText("La dirección actual es: Izquierda");
+        }
     }//GEN-LAST:event_izquierdaActionPerformed
 
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MainWindow().setVisible(true);
-            }
-        });
-    }
+//    public static void main(String args[]) {
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new MainWindow().setVisible(true);
+//            }
+//        });
+//    }
 
     public String getModelo() {
         return modelo;
@@ -278,6 +280,10 @@ public class MainWindow extends javax.swing.JFrame {
     public double getApertura() {
         return apertura;
     }
+    
+    public String getDireccion() {
+        return direccion;
+    }
 
     public void setApertura(double apertura) {
         this.apertura = apertura;
@@ -287,6 +293,27 @@ public class MainWindow extends javax.swing.JFrame {
         this.direccion = direccion;
     }
 
+    public boolean isIsConfigured() {
+        return isConfigured;
+    }
+
+    public void setIsConfigured(boolean isConfigured) {
+        this.isConfigured = isConfigured;
+    }
+    
+    public void setDialogText (String s){
+        this.dialog.setText(convertToMultiline(s));
+    }
+    
+    public void updateDiario(ArrayList<String> diario_str){
+        DefaultListModel model = new DefaultListModel();
+        for (int x = 0; x < diario_str.size(); x++) {
+            String elem = diario_str.get(x);
+            model.addElement(elem);
+        }
+        diarioList.setModel(model);
+    }
+       
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CuadroDialogo;
     private javax.swing.JButton abajo;
@@ -297,10 +324,10 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel controles;
     private javax.swing.JButton derecha;
     private javax.swing.JLabel dialog;
+    private javax.swing.JList<String> diarioList;
     private javax.swing.JTextField distanciaFocalInput;
     private javax.swing.JLabel distanciaFocalLabel;
     private javax.swing.JButton izquierda;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField modeloInput;
     private javax.swing.JLabel modeloLabel;
@@ -312,10 +339,12 @@ public class MainWindow extends javax.swing.JFrame {
     private double distancia = 0;
     private double apertura = 0;
     private String direccion = "";
+    private boolean isConfigured = false;
     
     
     public static String convertToMultiline(String orig)
-{
+    {
         return "<html>" + orig.replaceAll("\n", "<br>");
     }
+
 }
