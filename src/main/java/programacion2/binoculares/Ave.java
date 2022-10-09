@@ -1,9 +1,18 @@
+import java.util.ArrayList;
+
 public class Ave extends Objetivo {
   public Ave(
       String p_nombre,
       String p_nombreCientifico,
       int p_rareza) {
     super(p_nombre, p_nombreCientifico, p_rareza, "ave");
+    
+    ArrayList aves = new ArrayList();
+    aves.add("Garcanchillo, Buteo magnirostris");
+    aves.add("Urraca, Cyanocorax chrysops");
+    aves.add("Chalchalero, Turdus rufiventris");
+    aves.add("Chiricote, Aramides cajanea");
+    aves.add("Charata, Ortalis canicollis");
   }
 
   @Override

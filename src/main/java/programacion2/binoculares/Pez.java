@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Pez extends Objetivo {
   private double peso;
 
@@ -8,11 +10,19 @@ public class Pez extends Objetivo {
       double p_peso) {
     super(p_nombre, p_nombreCientifico, p_rareza, "pez");
     this.peso = p_peso;
+    
+    ArrayList peces = new ArrayList();
+    peces.add("Pejerrey");
+    peces.add("Trucha");
+    peces.add("Sabalo");
+    peces.add("Bagre");
+    peces.add("Dorado");
+    
   }
 
   @Override
   public String toString() {
-    return "Este es un pez";
+    return "Este es un pez!";
   }
 
   @Override
