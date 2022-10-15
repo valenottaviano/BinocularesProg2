@@ -12,10 +12,10 @@ public class Naturaleza {
     database_plantas = new ArrayList<Objetivo>();
     database_peces = new ArrayList<Objetivo>();
     database_aves = new ArrayList<Objetivo>();
-    database_animales.add(new Animal("Sebas", "SebastianBrito", 10, 2, "Peligroso"));
-    database_plantas.add(new Planta("Valen", "ValentinOttaviano", 5, "Verde", true));
-    database_peces.add(new Pez("Maxi", "maximiliano", 0, 10));
-    database_aves.add(new Ave("Maxi", "maximiliano", 0));
+    database_animales.add(new Animal("Perro", "SebastianBrito", 10, 2, "Peligroso"));
+    database_plantas.add(new Planta("Jazmín", "ValentinOttaviano", 5, "Verde", true));
+    database_peces.add(new Pez("Pejerrey", "maximiliano", 0, 10));
+    database_aves.add(new Ave("Águila", "maximiliano", 0));
   }
 
   public Objetivo getObjetivo(String dir) {
